@@ -8,6 +8,7 @@ public class Main{
         System.out.print("Enter a number for multiplication table:");
         int n = in.nextInt();
         mulTable(n);
+        unlimitedSum(in);
 
     }
 
@@ -48,5 +49,17 @@ public class Main{
 
     static float lcm(float n1, float n2){
         return (n1 * n2) / hcf(n1, n2);
+    }
+
+    static void unlimitedSum(Scanner in){
+        float count = 0;
+       while (true){
+           String entry = in.next();
+           if(entry.equalsIgnoreCase("x")){
+               System.out.println("Sum: "+count);
+               break;
+           }
+           count += Float.parseFloat(entry);
+       }
     }
 }
