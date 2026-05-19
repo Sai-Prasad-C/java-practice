@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main{
+public class flowOfCode {
     static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         checkLeap(in);
